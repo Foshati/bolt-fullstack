@@ -1,0 +1,9 @@
+# تست /template endpoint
+curl -X POST http://localhost:3000/template \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "Create a React dashboard"}'
+
+# تست /chat endpoint
+curl -X POST http://localhost:3000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"messages": [{"role": "user", "content": "Hello"}]}'
